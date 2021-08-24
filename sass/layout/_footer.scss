@@ -1,0 +1,139 @@
+// footer
+
+.footer {
+  background-color: $secondary-background-color;
+  color: $main-text-color;
+  padding: 60px 0;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link {
+  color: $main-text-color;
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+
+  transition: color $timing-function;
+}
+.footer-link:hover,
+.footer-linkt:focus {
+  color: $aditional-color;
+}
+
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+.address li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+// social links
+
+.social {
+  margin-left: 70px;
+}
+
+.title-join {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: $main-text-color;
+
+  transition: background-color $timing-function;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: $aditional-color;
+}
+
+.join-icon {
+  width: 20px;
+  height: 20px;
+}
+
+// footer form
+
+.footer-form-submit {
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-form-submit p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-text-color;
+  margin-bottom: 20px;
+}
+
+.footer-input-form {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  height: 50px;
+  outline: none;
+  border-radius: 4px;
+  background-color: inherit;
+  border-color: rgba(255, 255, 255, 0.3);
+
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  padding-left: 15px;
+}
+
+.footer-input-form::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-submit {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  padding: 10px 28px;
+}
+.icon-send {
+  margin-left: 10px;
+}

@@ -1,0 +1,28 @@
+// section customers
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-link {
+  display: block;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  border: 1px solid $accent-color;
+  border-radius: 4px;
+  fill: $accent-color;
+
+  transition: border-color $timing-function, fill $timing-function;
+}
+
+.clients-link:focus,
+.clients-link:hover {
+  border-color: $aditional-color;
+  fill: $aditional-color;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+}

@@ -1,0 +1,31 @@
+// main content
+
+.prime-section {
+  text-align: center;
+}
+
+// overlay
+
+.overlay {
+  padding: 200px 0;
+  max-width: 1600px;
+  min-height: 600px;
+  margin: 0 auto;
+  background-color: $secondary-background-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img-background.jpg);
+
+  background-repeat: no-repeat;
+}
+
+.prime-title {
+  color: $main-text-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
