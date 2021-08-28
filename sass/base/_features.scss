@@ -1,36 +1,38 @@
+//   features
+
 .features {
   padding-bottom: 0;
 }
 
-.features-description {
+.features__description {
   width: 270px;
 }
 
-.features-list {
+.features__list {
   display: flex;
   justify-content: space-between;
 }
-.features-icon {
+.features__box {
   padding: 25px 100px;
   background-color: $background-extra-color;
 }
-.icon {
+.features__icon {
   width: 70px;
   height: 70px;
 }
-/*p*/
-.features-text {
-  margin-top: 10px;
-  color: $secondary-text-color;
-  font-size: 14px;
-  line-height: 1.7;
-}
 
-// title3
+//        title3
 
-.sub-title {
+.features__sub-title {
   color: $primary-text-color;
   font-size: 14px;
   line-height: 1.1;
   margin-top: 30px;
+}
+
+.features__text {
+  margin-top: 10px;
+  color: $secondary-text-color;
+  font-size: 14px;
+  line-height: 1.7;
 }

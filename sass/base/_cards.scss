@@ -1,31 +1,26 @@
-// section What we are doing
+//    section What we are doing
 
 .cards {
   justify-content: space-between;
 }
 
-.title {
-  color: $primary-text-color;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.image-list {
+.cards__list {
   display: flex;
   justify-content: space-between;
 }
 
-.image-thumb {
+.cards__image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__link {
   position: relative;
   display: block;
 }
 
-.image-thumb .image-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.cards__text {
+  @include absolute($b: 0, $l: 0);
   display: flex;
   justify-content: center;
   width: 100%;

@@ -16,11 +16,9 @@
   pointer-events: none;
 }
 
-.modal {
+.backdrop__window {
   position: relative;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  @include absolute($t: 50%, $l: 50%);
   width: 528px;
   min-height: 581px;
 
@@ -29,11 +27,9 @@
 
   transform: translate(-50%, -50%);
 }
-.button-close {
-  position: absolute;
+.backdrop__button-close {
+  @include absolute($r: 0, $t: 0);
   display: flex;
-  top: 0;
-  right: 0;
   width: 30px;
   height: 30px;
   margin: 8px;
@@ -41,8 +37,13 @@
   border-radius: 50%;
   background-color: $main-text-color;
   cursor: pointer;
+
+  &:focus .backdrop__icon-close,
+  &:hover .backdrop__icon-close {
+    fill: $aditional-color;
+  }
 }
-.icon-close {
+.backdrop__icon-close {
   align-self: center;
   height: 18px;
   width: 18px;
@@ -50,18 +51,14 @@
   transition: fill $timing-function;
 }
 
-.button-close:focus .icon-close,
-.button-close:hover .icon-close {
-  fill: $aditional-color;
-}
-// form
+/* form */
 
-.modal-form {
+.modal {
   width: 448px;
   margin: 40px 40px;
 }
 
-.form-title {
+.modal__title {
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -71,14 +68,11 @@
   margin-bottom: 12px;
 }
 
-.form-field {
+.modal__form-field {
   margin-bottom: 10px;
 }
 
-.form-field-comment {
-  margin-bottom: 20px;
-}
-.form-label {
+.modal__label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -91,11 +85,11 @@
   color: $secondary-text-color;
 }
 
-.form-label span {
+.modal__text {
   margin-bottom: 4px;
 }
 
-.form-input {
+.modal__input {
   display: block;
   border-color: $light-grey-color;
   width: 448px;
@@ -105,30 +99,32 @@
   cursor: pointer;
 
   transition: border $timing-function;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid $aditional-color;
+  }
+
+  &:focus + .modal__icon,
+  &:hover + .modal__icon {
+    fill: $aditional-color;
+  }
 }
 
-.form-input:focus,
-.form-input:hover {
-  outline: none;
-  border: 1px solid $aditional-color;
-}
-
-.form-icon {
-  position: absolute;
-  top: 27px;
-  left: 12px;
+.modal__icon {
+  @include absolute($t: 27px, $l: 12px);
   width: 18px;
   height: 18px;
 
   transition: fill $timing-function;
 }
 
-.form-input:focus + .form-icon,
-.form-input:hover + .form-icon {
-  fill: $aditional-color;
+.modal__form-comment {
+  margin-bottom: 20px;
 }
 
-.form-textarea {
+.modal__textarea {
   border-color: $light-grey-color;
   resize: none;
   width: 448px;
@@ -138,35 +134,32 @@
   cursor: pointer;
 
   transition: border $timing-function;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border: 1px solid $aditional-color;
+  }
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
-.form-textarea:focus,
-.form-textarea:hover {
-  outline: none;
-  border: 1px solid $aditional-color;
-}
-
-.form-textarea::placeholder {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+/* policy/agreement */
 
 .policy {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 
-.text-agreement {
-  margin-left: 4px;
-}
-
-.agreement {
+.policy__label {
   display: flex;
   align-items: center;
   font-weight: normal;
@@ -174,11 +167,7 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
-}
-
-.link-agreement {
-  color: $aditional-color;
-  margin-left: 4px;
+  margin-bottom: 30px;
 }
 
 .checkbox {
@@ -187,9 +176,18 @@
   appearance: none;
 
   position: absolute;
+
+  &:checked + .checkbox__icon {
+    border-color: $aditional-color;
+    background-color: $aditional-color;
+    background-image: url(../images/icon-check.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
-.icon-checkbox {
+.checkbox__icon {
   border: 2px solid $specific-text-color;
   width: 16px;
   height: 15px;
@@ -199,11 +197,11 @@
   transition: opacity $timing-function;
 }
 
-.checkbox:checked + .icon-checkbox {
-  border-color: $aditional-color;
-  background-color: $aditional-color;
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.policy__text {
+  margin-left: 4px;
+}
+
+.policy__link {
+  color: $aditional-color;
+  margin-left: 4px;
 }

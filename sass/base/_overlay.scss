@@ -1,10 +1,4 @@
-// main content
-
-.prime-section {
-  text-align: center;
-}
-
-// overlay
+// prime section-overlay
 
 .overlay {
   padding: 200px 0;
@@ -20,12 +14,4 @@
     url(../images/Img-background.jpg);
 
   background-repeat: no-repeat;
-}
-
-.prime-title {
-  color: $main-text-color;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  margin-bottom: 30px;
 }

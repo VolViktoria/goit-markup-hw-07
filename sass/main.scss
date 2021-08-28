@@ -1,21 +1,37 @@
 //base
 @import "base/normalize";
 
+// utils
+@import "utils/variables";
+@import "utils/placeholder";
+@import "utils/mixin";
+
 //components
+@import "components/common";
 @import "components/buttons";
 
 //layout
-@import "layout/header";
-@import "layout/logo";
-@import "layout/overlay";
-@import "layout/backdrop";
-@import "layout/features";
-@import "layout/our-work";
-@import "layout/our-team";
-@import "layout/clients";
-@import "layout/footer";
-@import "layout/projects";
+@import "layout/header/header-container";
+@import "layout/header/logo";
+@import "layout/header/nav";
+@import "layout/header/contacts";
 
-// utils
-@import "utils/variables";
-@import "utils/common";
+@import "layout/body";
+
+@import "layout/footer/footer-container";
+@import "layout/footer/address";
+@import "layout/footer/social";
+@import "layout/footer/subscribe";
+
+// base
+@import "base/prime";
+@import "base/overlay";
+@import "base/backdrop";
+@import "base/features";
+@import "base/features";
+@import "base/cards";
+@import "base/our-team";
+@import "base/clients";
+
+@import "base/portfolio/filters";
+@import "base/portfolio/projects";
