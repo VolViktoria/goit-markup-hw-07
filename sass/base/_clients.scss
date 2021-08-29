@@ -1,8 +1,7 @@
 // section customers/clients
 
 .clients {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
 }
 
 .clients__link {

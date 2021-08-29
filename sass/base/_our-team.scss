@@ -3,8 +3,7 @@
   background-color: $background-extra-color;
 }
 .team__list {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
 }
 
 .team__item {
@@ -34,16 +33,14 @@
 }
 
 .team__social-class {
-  display: flex;
+  @include flex-center;
   justify-content: center;
-  align-items: center;
   margin: 16px 32px 30px 32px;
   padding: 0;
 }
 
 .team__social-link {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: center;
   width: 44px;
   height: 44px;

@@ -9,8 +9,7 @@
 }
 
 .features__list {
-  display: flex;
-  justify-content: space-between;
+  @include flex-between;
 }
 .features__box {
   padding: 25px 100px;

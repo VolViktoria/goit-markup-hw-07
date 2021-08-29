@@ -15,8 +15,7 @@
 }
 
 .subscribe__form {
-  display: flex;
-  align-items: center;
+  @include flex-center;
 }
 
 .subscribe__input {

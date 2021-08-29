@@ -15,8 +15,7 @@
 }
 
 .social__list {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: center;
 }
 
@@ -25,8 +24,7 @@
 }
 
 .social__link {
-  display: flex;
-  align-items: center;
+  @include flex-center;
   justify-content: center;
   width: 44px;
   height: 44px;
