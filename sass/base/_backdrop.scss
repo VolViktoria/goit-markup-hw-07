@@ -27,6 +27,7 @@
 
   transform: translate(-50%, -50%);
 }
+
 .backdrop__button-close {
   @include absolute($r: 0, $t: 0);
   display: flex;

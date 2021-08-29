@@ -1,15 +1,15 @@
 @mixin absolute($t: false, $r: false, $b: false, $l: false) {
   position: absolute;
   @if ($t) {
-  top: $t;
-}
+    top: $t;
+  }
   @if ($r) {
-  right: $tr;
-}
+    right: $r;
+  }
   @if ($b) {
-  bottom: $b;
-}
+    bottom: $b;
+  }
   @if ($l) {
-  left: $l;
+    left: $l;
+  }
 }
-
