@@ -5,15 +5,14 @@
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+}
 
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+.filters__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filters__button {
   display: block;
-
   color: $primary-text-color;
   background-color: $background-extra-color;
   font-family: inherit;
