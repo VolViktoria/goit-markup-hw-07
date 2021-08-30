@@ -7,10 +7,23 @@
 @import "utils/mixin";
 
 //components
+
 @import "components/common";
 @import "components/buttons";
 
+@import "components/prime";
+@import "components/backdrop";
+@import "components/features";
+@import "components/cards";
+@import "components/team";
+@import "components/clients";
+@import "components/social";
+
+@import "components/portfolio/filters";
+@import "components/portfolio/projects";
+
 //layout
+
 @import "layout/header/header-container";
 @import "layout/header/logo";
 @import "layout/header/nav";
@@ -20,18 +33,4 @@
 
 @import "layout/footer/footer-container";
 @import "layout/footer/address";
-@import "layout/footer/social";
 @import "layout/footer/subscribe";
-
-// base
-@import "base/prime";
-@import "base/overlay";
-@import "base/backdrop";
-@import "base/features";
-@import "base/features";
-@import "base/cards";
-@import "base/our-team";
-@import "base/clients";
-
-@import "base/portfolio/filters";
-@import "base/portfolio/projects";

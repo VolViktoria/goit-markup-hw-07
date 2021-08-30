@@ -6,6 +6,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
@@ -16,16 +17,26 @@
   pointer-events: none;
 }
 
-.backdrop__window {
+.backdrop__modal {
   position: relative;
   @include absolute($t: 50%, $l: 50%);
   width: 528px;
   min-height: 581px;
+  padding: 40px 40px;
 
   background-color: $main-text-color;
   opacity: 1;
 
   transform: translate(-50%, -50%);
+}
+.backdrop__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  margin-bottom: 12px;
 }
 
 .backdrop__button-close {
@@ -54,26 +65,15 @@
 
 /* form */
 
-.modal {
+.form {
   width: 448px;
-  margin: 40px 40px;
 }
 
-.modal__title {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  margin-bottom: 12px;
-}
-
-.modal__form-field {
+.form__field {
   margin-bottom: 10px;
 }
 
-.modal__label {
+.form__label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -86,11 +86,11 @@
   color: $secondary-text-color;
 }
 
-.modal__text {
+.form__text {
   margin-bottom: 4px;
 }
 
-.modal__input {
+.form__input {
   display: block;
   border-color: $light-grey-color;
   width: 448px;
@@ -113,7 +113,7 @@
   }
 }
 
-.modal__icon {
+.form__icon {
   @include absolute($t: 27px, $l: 12px);
   width: 18px;
   height: 18px;
@@ -121,11 +121,11 @@
   transition: fill $timing-function;
 }
 
-.modal__form-comment {
+.form__comment {
   margin-bottom: 20px;
 }
 
-.modal__textarea {
+.form__textarea {
   border-color: $light-grey-color;
   resize: none;
   width: 448px;
@@ -157,7 +157,8 @@
   @include flex-center;
   flex-direction: column;
   justify-content: center;
-  
+
+  margin-bottom: 30px;
 }
 
 .policy__label {
@@ -202,4 +203,7 @@
 .policy__link {
   color: $aditional-color;
   margin-left: 4px;
+}
+.prime-button--centered {
+  margin-left: 150px;
 }

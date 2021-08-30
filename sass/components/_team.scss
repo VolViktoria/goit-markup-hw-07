@@ -32,32 +32,6 @@
   margin-top: 10px;
 }
 
-.team__social-class {
-  @include flex-center;
-  justify-content: center;
+.team__social {
   margin: 16px 32px 30px 32px;
-  padding: 0;
-}
-
-.team__social-link {
-  @include flex-center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: $main-text-color;
-  fill: $accent-color;
-
-  transition: background-color $timing-function, fill $timing-function;
-
-  &:hover,
-  &:focus {
-    background-color: $aditional-color;
-    fill: $main-text-color;
-  }
-}
-
-.team__social-item {
-  width: 20px;
-  height: 20px;
 }

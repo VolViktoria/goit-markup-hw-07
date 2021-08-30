@@ -1,11 +1,11 @@
 /*   projects    */
 
-.product {
+.projects {
   display: flex;
   flex-wrap: wrap;
 }
 
-.product__item {
+.projects__item {
   background-color: $main-text-color;
   border-radius: 0px 0px 4px 4px;
   width: 370px;
@@ -19,7 +19,7 @@
   }
 }
 
-.product__link {
+.projects__link {
   display: block;
 
   transition: box-shadow $timing-function;
@@ -32,18 +32,18 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:hover .product__overlay,
-  &:focus .product__overlay {
+  &:hover .projects__overlay,
+  &:focus .projects__overlay {
     transform: translateY(0);
   }
 }
 
-.product__card {
+.projects__card {
   position: relative;
   overflow: hidden;
 }
 
-.product__overlay {
+.projects__overlay {
   @include absolute($t: 0, $l: 0);
   content: "";
   background-color: rgba(33, 150, 243, 0.9);
@@ -60,13 +60,13 @@
   transition: transform $timing-function;
 }
 
-.product__text {
+.projects__text {
   padding: 24px 20px;
   border: 1px solid $extra-text-color;
   border-top: none;
 }
 
-.product__title {
+.projects__title {
   color: $primary-text-color;
   font-weight: bold;
   font-size: 18px;
@@ -74,7 +74,7 @@
   letter-spacing: 0.06em;
 }
 
-.product__description {
+.projects__description {
   color: $secondary-text-color;
   font-size: 16px;
   line-height: 1.9;
