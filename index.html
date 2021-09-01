@@ -549,15 +549,13 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop__modal">
-        <button data-modal-close type="button" class="backdrop__button-close">
-          <svg class="backdrop__icon-close">
+          <p class="backdrop__title">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="form">
+             <button data-modal-close type="button" class="form__button-close">
+          <svg class="form__icon-close">
             <use href="./images/symbol-defs-2.svg#icon-close-black"></use>
           </svg>
         </button>
-
-        
-          <p class="backdrop__title">Оставьте свои данные, мы вам перезвоним</p>
-          <form class="form">
             <div class="form__field">
               <label for="name" class="form__label">
                 <span class="form__text">Имя</span>
@@ -613,8 +611,9 @@
                 <a href="./" class="policy__link">Условия договора</a>
               </label>
              </div>
-             <button type="submit" class="prime-button prime-button--shadow prime-button--centered">Отправить</button>
-             
+             <div class="form__button-wrapper">
+             <button type="submit" class="prime-button prime-button--shadow">Отправить</button>
+             </div>
             
           </form>
       </div>

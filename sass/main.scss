@@ -1,6 +1,3 @@
-//base
-@import "base/normalize";
-
 // utils
 @import "utils/variables";
 @import "utils/placeholder";
@@ -13,6 +10,9 @@
 
 @import "components/prime";
 @import "components/backdrop";
+@import "components/checkbox";
+@import "components/form";
+@import "components/policy";
 @import "components/features";
 @import "components/cards";
 @import "components/team";
