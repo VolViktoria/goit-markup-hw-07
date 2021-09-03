@@ -4,30 +4,6 @@
   width: 448px;
 }
 
-.form__button-close {
-  @include absolute($r: 0, $t: 0);
-  display: flex;
-  width: 30px;
-  height: 30px;
-  margin: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: $main-text-color;
-  cursor: pointer;
-
-  &:focus .form__icon-close,
-  &:hover .form__icon-close {
-    fill: $aditional-color;
-  }
-}
-.form__icon-close {
-  align-self: center;
-  height: 18px;
-  width: 18px;
-
-  transition: fill $timing-function;
-}
-
 .form__field {
   margin-bottom: 10px;
 }
